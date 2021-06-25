@@ -1,0 +1,114 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__container {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__close-icon {
+    vertical-align: middle;
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__close-btn:hover &__close-icon,
+  &__close-btn:focus &__close-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-nav__link {
+  font-style: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  vertical-align: top;
+  letter-spacing: 2%;
+  color: var(--main-font-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-nav__item {
+  margin-bottom: 36px;
+
+  &:last-child {
+    margin-bottom: 302px;
+  }
+}
+
+.mobile-contacts__link {
+  font-style: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  vertical-align: top;
+  letter-spacing: 2%;
+  color: var(--secondary-font-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &--large {
+    font-size: 44px;
+    line-height: 1.18;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 64px;
+  }
+}
+
+.mobile-webs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-webs__link {
+  font-style: 500;
+  font-size: 22px;
+  line-height: 1.22;
+  vertical-align: top;
+  letter-spacing: 2%;
+  color: var(--accent-color);
+}

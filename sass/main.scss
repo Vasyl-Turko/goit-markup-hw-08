@@ -1,0 +1,27 @@
+// BASE //
+@import './base/base';
+@import './base/section';
+@import './base/container';
+
+// UTILS //
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// COMPONENTS //
+@import './components/social-webs';
+@import './components/.section__title';
+@import './components/logo';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+@import './components/mobile-menu';
+
+// LAYOUT //
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/job';
+@import './layout/about-us';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';

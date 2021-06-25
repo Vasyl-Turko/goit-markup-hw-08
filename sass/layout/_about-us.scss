@@ -1,0 +1,38 @@
+.about-us {
+  background-color: var(--about-us-bgr);
+}
+
+.members {
+  display: flex;
+  margin-top: 50px;
+}
+.members li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.members li {
+  background-color: var(--secondary-color);
+}
+
+.members__item {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.members__description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+  margin-top: 10px;
+}
+.about-members {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+}

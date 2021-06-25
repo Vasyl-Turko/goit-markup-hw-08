@@ -1,0 +1,137 @@
+.upsite {
+  background-color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-part--black {
+  color: var(--main-font-color);
+}
+
+.studio-contacts__icon {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .site-navigation,
+  .studio-contacts {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-menu__icon {
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-navigation,
+  .studio-contacts {
+    display: block;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-navigation__link {
+    position: relative;
+    color: var(--main-font-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: block;
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  .site-navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .studio-contacts__link {
+    color: var(--secondary-font-color);
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  .mail {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .studio-contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .studio-contacts__link {
+    color: var(--secondary-font-color);
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  .mail,
+  .tel {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mail {
+    margin-bottom: 0;
+  }
+}
+
+// .mail,
+// .tel {
+//   margin-right: 50px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .studio-contacts__link:hover,
+// .studio-contacts__link:focus,
+// .site-navigation__link:hover,
+// .site-navigation__link:focus {
+//   color: var(--accent-color);
+//   background-color: var(--secondary-color);
+// }
