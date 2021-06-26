@@ -48,6 +48,12 @@
   }
 }
 
+@media screen and (min-width: 768) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-nav__link {
   font-style: 500;
   font-size: 40px;
@@ -113,3 +119,15 @@
   letter-spacing: 2%;
   color: var(--accent-color);
 }
+
+// .mobile-webs__link--current {
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     width: 22px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     transform: rotate(90deg) translateX(-1px);
+//     transform-origin: left top;
+//     margin-left: 10px;
+//   }
+// }

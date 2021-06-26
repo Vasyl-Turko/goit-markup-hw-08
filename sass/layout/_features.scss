@@ -49,7 +49,7 @@
   }
 
   .features__item {
-    width: calc(100% / 2);
+    width: calc((100% / 2) - 30px);
     margin: 15px;
   }
 }
