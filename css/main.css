@@ -42,6 +42,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   min-height: 60px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -186,11 +187,26 @@ body {
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 521px;
+  width: 94%;
+  height: 94%;
+  overflow: auto;
   background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal-btn-close {
@@ -220,7 +236,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
   margin-bottom: 12px;
@@ -288,56 +304,24 @@ body {
   justify-content: space-around;
   align-items: center;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-request {
+    line-height: 1.15;
+  }
+  .modal-policy-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .modal-policy-link {
   color: var(--accent-color);
-}
-
-.checkbox-icon {
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--main-font-color);
-  transition: border var(--transition-duration) var(--transition-timing-function);
-}
-
-.modal-policy-icon {
-  opacity: 0;
-  transition: opacity var(--transition-duration) var(--transition-timing-function);
-}
-
-.modal-checkbox:checked + .modal-policy-label .modal-policy-icon {
-  opacity: 1;
-}
-
-.modal-checkbox:checked + .modal-policy-label .checkbox-icon {
-  border: none;
-}
-
-.modal-submit-btn {
-  align-self: center;
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background-color: var(--btn-bgr-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
-}
-
-.modal-submit-btn:hover, .modal-submit-btn:focus {
-  background-color: var(--accent-color);
 }
 
 .mobile-menu {
@@ -440,6 +424,7 @@ body {
 
 .mobile-webs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -591,10 +576,44 @@ body {
 
 .hero {
   background-color: var(--background-hero);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-images/bg-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   max-width: 100%;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192 dpi) and (max-width: 767px), (min-resolution: 2 dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/background-images/bg-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/background-images/bg-tablet.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192 dpi) and (min-width: 768px), (min-resolution: 2 dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/background-images/bg-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/background-images/bg-desktop.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192 dpi) and (min-width: 1200px), (min-resolution: 2 dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/background-images/bg-desktop@2x.jpg);
+  }
 }
 
 .hero__title {

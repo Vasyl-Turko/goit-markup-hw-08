@@ -2,7 +2,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
   margin-bottom: 12px;
@@ -72,8 +72,8 @@
   justify-content: space-around;
   align-items: center;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
@@ -125,5 +125,16 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-request {
+    line-height: 1.15;
+  }
+
+  .modal-policy-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
