@@ -31,6 +31,7 @@
 
 .members__item {
   max-width: 450px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -42,12 +43,14 @@
   .members {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .members__item {
     width: calc((100% / 2) - 30px);
-    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
