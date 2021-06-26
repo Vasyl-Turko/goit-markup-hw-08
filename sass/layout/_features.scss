@@ -4,7 +4,7 @@
 
 .icon-box {
   height: 120px;
-  display: inline-block;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,18 +16,6 @@
 .features__icon {
   width: 70px;
   height: 70px;
-}
-
-.features {
-  display: flex;
-  justify-content: space-between;
-}
-
-.features__item {
-  width: 270px;
-}
-.features__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features__title {
@@ -44,4 +32,37 @@
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
   margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .features__item {
+    width: calc(100% / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    flex-wrap: nowrap;
+  }
+
+  .features__item {
+    width: 270px;
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
