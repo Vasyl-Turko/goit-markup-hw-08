@@ -108,7 +108,11 @@
 .mobile-webs {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+}
+
+.mobile-webs__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .mobile-webs__link {
