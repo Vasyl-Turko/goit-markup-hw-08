@@ -429,7 +429,7 @@ body {
 }
 
 .mobile-nav__link {
-  font-style: 500;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   vertical-align: top;
@@ -451,7 +451,7 @@ body {
 }
 
 .mobile-contacts__link {
-  font-style: 500;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   vertical-align: top;
@@ -487,8 +487,8 @@ body {
 }
 
 .mobile-webs__link {
-  font-style: 500;
-  font-size: 22px;
+  font-weight: 500px;
+  font-size: 18px;
   line-height: 1.22;
   vertical-align: top;
   letter-spacing: 2%;
@@ -747,10 +747,6 @@ body {
   }
 }
 
-.our-features {
-  padding-bottom: 0px;
-}
-
 .icon-box {
   height: 120px;
   display: flex;
@@ -802,6 +798,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .our-features {
+    padding-bottom: 0px;
+  }
   .features {
     flex-wrap: nowrap;
   }
@@ -813,42 +812,47 @@ body {
   }
 }
 
-.jobs {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+.job {
+  display: none;
 }
 
-.jobs .members__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.jobs__item {
-  position: relative;
-}
-
-.jobs__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.jobs__description {
-  position: absolute;
-  bottom: 0px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-  background: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  min-height: 70px;
-  padding-top: 27px;
+@media screen and (min-width: 1200px) {
+  .job {
+    display: block;
+  }
+  .jobs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .jobs .members__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .jobs__item {
+    position: relative;
+  }
+  .jobs__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .jobs__description {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    min-height: 70px;
+    padding-top: 27px;
+  }
 }
 
 .about-us {
