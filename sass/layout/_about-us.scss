@@ -13,6 +13,11 @@
   background-color: var(--secondary-color);
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
 .members__description {
   font-size: 16px;
   line-height: 1.19;

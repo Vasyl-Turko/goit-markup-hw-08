@@ -1,12 +1,14 @@
-// .our-clients {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.our-clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.our-clients-section__title {
+  margin-bottom: 30px;
+}
 .clients {
   display: flex;
   flex-wrap: wrap;
-  // margin-top: 50px;
   margin: -15px;
 }
 
@@ -22,6 +24,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .our-clients-section__title {
+    margin-bottom: 50px;
+  }
+
   .clients__item {
     width: calc((100% / 6) - 30px);
   }
@@ -30,10 +41,6 @@
     margin-top: 50px;
   }
 }
-
-// .clients__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .clients__link {
   display: flex;

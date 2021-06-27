@@ -1,15 +1,21 @@
-.contact-box {
-  margin-right: 70px;
-}
-
 .downsite {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-right: 0;
 }
 
 .logo__part--white {
   color: var(--secondary-color);
+}
+
+.contact-box,
+.social-box {
+  margin-bottom: 60px;
 }
 
 .address {
@@ -19,12 +25,13 @@
   letter-spacing: 0.03em;
   margin-top: 20px;
 }
+
 .address-contacts {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .address-contacts__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   &:not(:first-child) {
     margin-bottom: 0px;
@@ -39,31 +46,21 @@
   color: var(--contacts-color);
 }
 
-.footer--flex {
-  display: flex;
-  align-items: baseline;
-}
-
-.info-box {
-  margin-right: 70px;
-}
-
-.social-box {
-  margin-right: 93px;
-}
-
 .social-box__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--secondary-color);
 }
 
 .footer__link--bg-grey {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-webs {
+  justify-content: center;
 }
 
 .social-webs__icon--fill-white {
@@ -76,6 +73,8 @@
 
 .subscribe__form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -90,10 +89,11 @@
 }
 
 .mail-field {
-  width: 350px;
+  width: 93%;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -135,4 +135,53 @@
 .subscribe__icon {
   fill: var(--secondary-color);
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-box {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-thumb {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-contacts {
+    margin-top: 9px;
+  }
+
+  .contact-box {
+    margin-right: 70px;
+  }
+
+  .address-contacts__item {
+    margin-bottom: 9px;
+
+    &:not(:first-child) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .mail-field {
+    width: 350px;
+  }
+
+  .footer--flex {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .social-box {
+    margin-right: 93px;
+  }
+
+  // .info-box {
+  //   margin-right: 70px;
+  // }
 }
