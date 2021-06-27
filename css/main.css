@@ -1162,6 +1162,7 @@ body {
   }
   .contact-box {
     margin-right: 70px;
+    margin-bottom: 0;
   }
   .address-contacts__item {
     margin-bottom: 9px;
@@ -1170,7 +1171,9 @@ body {
     margin-bottom: 0px;
   }
   .mail-field {
-    width: 350px;
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
   .footer--flex {
     display: flex;
@@ -1178,6 +1181,14 @@ body {
   }
   .social-box {
     margin-right: 93px;
+  }
+  .subscribe__form {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .downsite {
+    text-align: left;
   }
 }
 
