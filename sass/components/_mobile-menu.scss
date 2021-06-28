@@ -18,6 +18,7 @@
   }
 
   &__container {
+    height: 100%;
     position: relative;
     padding-left: 40px;
     padding-right: 48px;
@@ -82,9 +83,13 @@
 .mobile-nav__item {
   margin-bottom: 36px;
 
-  &:last-child {
-    margin-bottom: 302px;
-  }
+  // &:last-child {
+  //   margin-bottom: 302px;
+  // }
+}
+
+.mobile-contacts {
+  margin-top: auto;
 }
 
 .mobile-contacts__link {

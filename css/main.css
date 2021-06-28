@@ -401,6 +401,7 @@ body {
 }
 
 .mobile-menu__container {
+  height: 100%;
   position: relative;
   padding-left: 40px;
   padding-right: 48px;
@@ -463,8 +464,8 @@ body {
   margin-bottom: 36px;
 }
 
-.mobile-nav__item:last-child {
-  margin-bottom: 302px;
+.mobile-contacts {
+  margin-top: auto;
 }
 
 .mobile-contacts__link {
@@ -1214,7 +1215,7 @@ body {
   height: 38px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 63;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--about-us-bgr);
@@ -1263,7 +1264,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--main-font-color);
   margin-bottom: 4px;
 }
