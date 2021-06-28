@@ -410,8 +410,8 @@ body {
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -439,9 +439,9 @@ body {
 .mobile-nav__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18;
+  line-height: 1.17;
   vertical-align: top;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--main-font-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
@@ -449,9 +449,9 @@ body {
 .mobile-nav__link--selected {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18;
+  line-height: 1.17;
   vertical-align: top;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
@@ -472,14 +472,14 @@ body {
   font-size: 24px;
   line-height: 1.17;
   vertical-align: top;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--secondary-font-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .mobile-contacts__link--large {
-  font-size: 44px;
-  line-height: 1.18;
+  font-size: 34px;
+  line-height: 1.17;
   color: var(--accent-color);
 }
 
@@ -509,7 +509,7 @@ body {
   font-size: 18px;
   line-height: 1.22;
   vertical-align: top;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
@@ -1289,6 +1289,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 55;
   width: 100%;
   height: 100%;
   font-weight: normal;
